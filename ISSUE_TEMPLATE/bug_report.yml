@@ -1,36 +1,7 @@
 name: Bug Report
-description: Report a bug in Plovr
+description: Report a bug
 labels: ["bug"]
 body:
-  - type: dropdown
-    id: sub-project
-    attributes:
-      label: Sub-project
-      description: Which sub-project(s) are affected?
-      multiple: true
-      options:
-        - App
-        - Server
-        - Extension
-    validations:
-      required: true
-
-  - type: dropdown
-    id: integration
-    attributes:
-      label: Integration
-      description: Which integration is involved (if any)?
-      multiple: false
-      options:
-        - N/A
-        - Square
-        - Toast
-        - Peppr
-        - Google Business
-        - Delivery
-    validations:
-      required: false
-
   - type: textarea
     id: bug-description
     attributes:
