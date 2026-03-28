@@ -1,0 +1,50 @@
+name: Feature Request
+description: Suggest a new feature or enhancement for Plovr
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: sub-project
+    attributes:
+      label: Sub-project
+      description: Which sub-project(s) does this apply to?
+      multiple: true
+      options:
+        - App
+        - Server
+        - Extension
+        - Skills
+        - Integrations
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Description
+      description: A clear description of the feature.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case
+      description: Describe the use case or problem this feature would solve.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed solution
+      description: How you think this could be implemented.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: Alternatives considered
+      description: Any alternative solutions or features you have considered.
+    validations:
+      required: false
